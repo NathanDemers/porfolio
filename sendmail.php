@@ -22,9 +22,9 @@
          * l'attribut name d'un input de votre formulaire si vous voulez les utiliser. J'ai mis des valeurs par défaut 
          * à chacune au cas où vous ne les utiliseriez pas.
          */
-        $courrielOrigine = $_POST['courriel'];
+        $courrielOrigine = $_POST['email'];
         $sujet = isset($_POST['sujet']) ? $_POST['sujet'] : 'Demande de contact envoyé depuis mon site';
-        $message = isset($_POST['contact']) ? "Nom : " . $_POST['contact'] . "\r\n\r\n" : '';
+        $message = isset($_POST['name']) ? "Nom : " . $_POST['name'] . "\r\n\r\n" : '';
         $message .= isset($_POST['message']) ? $_POST['message'] : '';
 
         // Entrez ici l'adresse courriel vers laquelle vous voulez envoyer le formulaire
